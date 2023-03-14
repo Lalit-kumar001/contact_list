@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/b3348ae33f.js" crossorigin="anonymous "></script>
+    <link rel="stylesheet" href="/css/style2.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+
+</head>
+
+<body>
+    <div id="page-heading">
+        <h1>Contact List</h1>
+    </div>
+    
+    <div id="contact-box" class="parent">
+        <% l=1%>
+        <% for(i of contacts_List) { %>
+        <div class="contact hover parent-div" id='div1'>
+            <i class="fa-solid fa-face-grin" id="face-icon"></i>
+            <!-- <img src="./images/image.jpg" alt="loading"> -->
+            <!-- <a href="/delete-contact/?id=<%=i._id%>"> <i class="fa-solid fa-trash float"></i> </a>   -->
+            <span class="name"><%=i.name %></span>
+            <!-- <a href="/delete-contact/?id=<%=i._id%>"> <i class="fa-solid fa-trash float"></i> </a>   -->
+            <span class="number"><%=i.phone%></span>
+
+            <div class="details1 child-div" id="div<%=l%>">
+                <div class="details-inner-part">
+                    <a href="/delete-contact/?id=<%=i._id%>"> <i class="fa-solid fa-trash float delete"></i> </a>
+                    <a href="/delete-contact/?id=<%=i._id%>"> <i class="fa-solid fa-phone"></i></i> </a>
+                </div>
+            </div>
+    
+        </div>
+       
+<%l=l+1%>
+        <%}%>
+    </div>  
+     
+<button class="Add-contact">Add Contact</button>
+  <div class="form-box">
+    <form action="/new-contact" method="post">
+        <input type="text" name="name" placeholder="enter the name" class="form-content">
+        <input type="number" name="phone" placeholder="enter mobile number" class="form-content">
+        <button type="submit" class="form-content">Add contact</button>
+        
+      
+      </form>
+  </div>    
+
+
+
+<!-- <h1>Delete contact</h1>
+<form action="/delete-contact" method="post">
+    <input type="text" name="name" placeholder="enter the name">
+    <input type="number" name="phone" placeholder="enter mobile number">
+    <button type="submit">Delete contact</button>
+    
+  
+  </form>
+   -->
+        <script src="/js/first.js" async defer></script>
+    </body>
+</html>

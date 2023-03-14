@@ -1,0 +1,149 @@
+@media screen and (min-width: 723px) {
+
+
+body{
+    background-color: black;
+}
+
+#page-heading{
+    display: flex;
+    align-items: center;
+    
+}
+.contact{
+    background-color: darkblue;
+    color: white;
+    margin: auto;
+    margin-bottom: 20px;
+    min-width: 30%;
+    border: 2px solid black;
+}
+#contact-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.number{
+    float: right;
+}
+.name{
+    margin-left: 10%;
+}
+.form-box{
+    margin: auto;
+    width: 30%;
+}
+.hover:hover{
+    background-color:aqua ;
+}
+
+.float{
+    float: right;
+    margin-left: 10%;
+}
+@media screen and (min-width: px) {
+
+
+}
+}
+
+
+/* screen smaller tha 723  */
+@media screen and (max-width: 723px) {
+
+
+    body{
+        background-color: black;
+    }
+    
+    #page-heading{
+        text-align: center;
+    }
+    .contact{
+        background-color: darkblue;
+        color: white;
+        margin: auto;
+        margin-bottom: 20px;
+        min-width: 70%;
+        border: 2px solid black;
+    }
+    #contact-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .number{
+        float: right;
+    }
+    .name{
+        margin-left: 10%;
+    }
+    .form-box{
+        margin: auto;
+        width: 30%;
+    }
+    .hover:hover{
+        background-color:aqua ;
+    }
+    
+    .float{
+        float: right;
+        margin-left: 10%;
+    }
+    @media screen and (min-width: px) {
+    
+    
+    }
+    }
+     
+/* 312 */
+    @media screen and (max-width: 312px) {
+
+
+        body{
+            background-color: black;
+        }
+        
+        #page-heading{
+            text-align: center;
+        }
+        .contact{
+            background-color: darkblue;
+            color: white;
+            margin: auto;
+            margin-bottom: 20px;
+            min-width: 98vw;
+            border: 2px solid black;
+        }
+        #contact-box{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .number{
+            float: right;
+        }
+        .name{
+            margin-left: 10%;
+        }
+        .form-box{
+            display: flex;
+            flex-direction: column;
+            width: 98vw;
+            /* margin: auto; */
+            /* width: 30%; */
+        }
+        .hover:hover{
+            background-color:aqua ;
+        }
+        
+        .float{
+            float: right;
+            margin-left: 10%;
+        }
+        
+    .form-content{
+        width: 100%;
+    }
+        }
+        

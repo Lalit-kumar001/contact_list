@@ -1,0 +1,72 @@
+/* for pc  */
+
+body{
+  background-color: blueviolet; 
+}
+
+#page-heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#contact-box{
+    background-color: black;
+     /* flex-direction: row;  */
+    height: 80vh;
+    width: 50%;
+    margin: auto;
+    font-size: 25px;
+
+}
+.contact{
+/* display: flex; */
+/* flex-direction: column; */
+justify-content: space-between;
+/* align-content: center; */
+align-items: center;
+background-color: azure;
+height: 10%;
+margin-bottom: 20px;
+}
+#face-icon{
+    font-size: 30px;
+}
+.details1{
+    display: none;
+}
+.details2{
+    background-color: grey;
+    width: 70%;
+    margin: auto;
+    height: 65%;
+    /* display; */
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.details-inner-part{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 50%;
+}
+.number{
+    float: right;
+}
+.name{
+    margin-left: 1%;
+
+}
+.delete{
+    font-size: 10px;
+    color: red;
+}
+.delete{
+    font-size: 20px;
+}
+.form-box{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
